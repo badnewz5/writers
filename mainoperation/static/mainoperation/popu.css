@@ -5,6 +5,7 @@
     background: #FFFFFF;
     min-width: 270px;
     height: 350px;
+    margin-bottom:12%;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
@@ -28,7 +29,7 @@
     opacity: .6;
   }
   .post-module .thumbnail {
-    background: #000000;
+    background:transparent;
     height: 350px;
     overflow: hidden;padding: 0;
   }
@@ -37,7 +38,7 @@
     top: 20px;
     right: 20px;
     z-index: 1;
-    background: #f2b202;
+    background:white;
     width: 55px;
     height: 55px;
     padding: 12.5px 0;
@@ -88,30 +89,32 @@
     position: absolute;
     top: -34px;
     left: 0;
-    background: #f2b202;
+    background:blue;
     padding: 10px 15px;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
   .post-module .post-content .title {
     margin: 0;
+    
+  
     padding: 0 0 10px;
-    color: #222 !important;
+    color: white;
     font-size: 24px !important;
     font-weight: 700;    margin: 40px 0 0 !important;
   }
   .post-module .post-content .sub_title {
     margin: 0;
     padding: 0 0 20px;
-    color: #f2b202;
+    color:white;
     font-size: 20px;
     font-weight: 400;
   }
   .post-module .post-content .description {
     display: none;
-    color: #666666;
+    color:white;
     font-size: 14px;
     line-height: 1.8em;
   }
@@ -142,7 +145,6 @@
   }
   .container .column .demo-title {
     margin: 0 0 15px;
-    color: #666666;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
