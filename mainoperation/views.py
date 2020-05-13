@@ -4,8 +4,8 @@ from .models import *
 # Create your views here.
 def index(request):
     category=Category.objects.get(category_name='living')
-    new_arrival = Product.objects.all().order_by('-id')[:3]
-    living_products = Product.objects.filter(category=category).order_by('-id')[:4]
+    new_arrival=Product.objects.all().order_by('id')[:6]
+    living_products=Product.objects.filter(category=category).order_by('-id')[:4]
     popular_category=Category.objects.all().order_by('id')[:8]
     return render(request, "mainoperation/index.html",{'new_arrival':new_arrival,'living_products':living_products,'popular_category':popular_category})
 
@@ -29,9 +29,10 @@ def decoration(request):
     return render(request, "Decoration/decoration.html",{'decoration_products':decoration_products})
 
 
-def office(request):
-    category = Category.objects.get(category_name="office furniture")
-    office_products = Product.objects.all().order_by('id')[:9]
+def officefurniture(request):
+    new_arrival = Product.objects.filter()
+    category=Category.objects.get(category_name='office')
+    office_products=Product.objects.all().order_by('id')[:9]
     return render(request, "Office/office.html",{'office_products':office_products})
 
 
@@ -43,20 +44,20 @@ def rugs(request):
 
 
 def beedroom(request):
-    category=Category.objects.get(category_name='beed room')
+    category=Category.objects.get(category_name='beedroom')
     beedroom_products = Product.objects.all().order_by('id')[:9]
     return render(request, "BeedRoom/beedroom.html",{'beedroom_products':beedroom_products})
 
 
 def kitchen(request):
-    category=Category.objects.get(category_name="kitchen furniture")
+    category=Category.objects.get(category_name="kitchen")
     kitchen_products = Product.objects.all().order_by('id')[:9]
     office_products = Product.objects.filter()
     return render(request, "Kitchen/kitchen.html",{'kitchen_products':kitchen_products})
 
 
 def otheritem(request):
-    category=Category.objects.get(category_name='other item')
+    category=Category.objects.get(category_name='other')
     otheritem_products = Product.objects.all().order_by('id')[:9]
     return render(request, "OtherItem/otheritem.html",{'otheritem_products':otheritem_products })
 
@@ -117,7 +118,6 @@ def sofa(request):
 
 def tvmedia(request):
     tvmedia_products = Product.objects.filter(name="tvmedia")
-    office_products = Product.objects.filter()
     return render(request, "Living/tvmedia.html",{'tvmedia_products':tvmedia_products })
 
 
@@ -375,21 +375,11 @@ def basketboxes(request):
 
 def teabacks(request):
     new_arrival = Product.objects.filter()
-    teabacks_products = Products.objects.filter(category__category_name='teabacks')
-    office_products = Products.objects.filter()
-    return render(request, "Rugs/teabacks.html")
-def about(request):
-    new_arrival = Product.objects.filter()
-    about_products = Product.objects.filter(category__category_name='about')
+    teabacks_products = Product.objects.filter(name="teabacks")
     office_products = Product.objects.filter()
+    return render(request, "Rugs/teabacks.html",{'teabacks_products': teabacks_products})
+def about(request):
     return render(request, "Pages/about.html")
 def contact(request):
-    new_arrival = Product.objects.filter()
-    contact_products = Product.objects.filter()
-    office_products = Product.objects.filter()
     return render(request, "Pages/contact.html")
-def sample(request):
-    new_arrival = Product.objects.filter()
-    living_products = Products.objects.filter()
-    office_products = Products.objects.filter()
-    return render(request, "Rugs/sample.html")
+

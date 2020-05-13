@@ -58,7 +58,7 @@
       <h2>{{living_product.name}}<h2>
        <p style="text-align: justify;margin-left: auto;margin-right: auto;">{{living_product.description}}
         <br><br>
-        <a class="btn btn-outline-primary btn-sm" role="button" href="#">View more</a>
+        <a class="btn btn-outline-primary btn-sm" role="button" href="{% url living_product.category.category_name %}">View more</a>
        </p>
         </div>
           </div>
@@ -91,17 +91,17 @@
                      <div class="card-body">
                         <h4 class="card-title border-bottom pb-3">{{new_arrival.name}}</h4>
                         <h6 class="card-text"style="text-align:justify;">{{new_arrival.description}}</h6>
-                        <a class="btn btn-outline-primary btn-sm" role="button" href="#">View more</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button" href="{% url new_arrival.category.category_name %}">View more</a>
                      </div>
                   </div>
                </div>
                {% endfor %}
             </div>
             
-<br></br><br>
+<br></br>
             <!-- Popular category-->
             <h3>Popular categories</h3>
-            <br><br><br><br>
+            <br>
             <div class="row">
               {% for popular_category in popular_category %}
                 <div class="col-md-4"style="  margin-bottom:5px;">
@@ -123,7 +123,7 @@
                       <div class="post-content">
                         <p class="title" style="color: black;text-align:justify;margin-left:2rem;">{{popular_category.category_name}}</p>
                         <h6 style="color:black;text-align: justify;">{{popular_category.description}}</h6>
-                        <a class="btn btn-outline-primary btn-sm" role="button" href="#">View more</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button" href="{% url popular_category.category_name %}">View more</a>
                       </div>
                     </div>
                   </div>

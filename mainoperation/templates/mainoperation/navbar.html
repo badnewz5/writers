@@ -40,7 +40,7 @@
             <div class="main_menu">
               <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
                 <div class="container box_1620">
-                  <a class="navbar-brand logo_h" href="#"><img src="{% static "images/ORCA TANZANIA LOGO.png" %}"style="width:80px;"></a>
+                  <a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static "images/ORCA TANZANIA LOGO.png" %}"style="width:80px;"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -48,105 +48,105 @@
                   </button>
                   <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav justify-content-end">
-                      <li class="nav-item active"><a class="nav-link" href="{% url 'page-index' %}">Home</a></li>
+                      <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-living' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'living' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Living</a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-coffetable' %}">Coffee Tables</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-bars' %}">Bars</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'coffetable' %}">Coffee Tables</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'bars' %}">Bars</a></li>
                           <li class="nav-item"><a class="nav-link" href="{% url 'chairsection' %}">Chairs</a></li>
                           <li class="nav-item"><a class="nav-link" href="{% url 'console' %}">Consoles</a></li>
                           <li class="nav-item"><a class="nav-link" href="{% url 'livingroom' %}">Living Rooom </a></li>
                           <li class="nav-item"><a class="nav-link" href="{% url  'mirror' %}">Mirrors</a></li>
                           <li class="nav-item"><a class="nav-link" href="{% url 'sofabed' %}">Sofa Bed </a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-sofas' %}">Sofas</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-tvmedia' %}">Tv & Media Furniture</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'sofas' %}">Sofas</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'tvmedia' %}">Tv & Media Furniture</a></li>
                         </ul>
                       </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-dining' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'dining' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Dining</a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-buffet' %}">Buffets</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-diningchair' %}">Dining Chairs</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-diningseat' %}">Dining Seats</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'buffet' %}">Buffets</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'diningchair' %}">Dining Chairs</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'diningseat' %}">Dining Seats</a></li>
                         </ul>
                       </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-office' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'office' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                         aria-expanded="false">Office Furniture</a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-desktable' %}">Desks & Tables</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-officechair' %}">Office Chairs</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-officesofa' %}">Office Sofa</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-sofas' %}">Safes</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-officestationary' %}">Office Stationary </a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'desktable' %}">Desks & Tables</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'officechair' %}">Office Chairs</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'officesofa' %}">Office Sofa</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'sofas' %}">Safes</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'officestationary' %}">Office Stationary </a></li>
                         </ul>
                                     </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-decoration' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'decoration' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Decoration</a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-candle' %}">Candles</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-homedecoration' %}">Home Decoration</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-basketboxes' %}">Basket & Boxes </a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-menuitem' %}">Menu Item</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-homeaccessories' %}">Home Accessories</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'candle' %}">Candles</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'homedecoration' %}">Home Decoration</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'basketboxes' %}">Basket & Boxes </a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'menuitem' %}">Menu Item</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'homeaccessories' %}">Home Accessories</a></li>
                         </ul>
                       </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-rugs' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'rugs' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Rugs & Textiles</a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-rugstextiles' %}">Rugs</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-bedding' %}">Bedding</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-curtainrail' %}">Curtain Rails& Rods</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url  'page-curtainblinds' %}">Curtain Blinds</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-curtainpillows' %}">Curtain Pillows</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-doormats' %}">DoorMats</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-chairpads' %}">Chairs Pads</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-outdoor' %}">OutDoor & Mattress</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-plaids' %}">Plaids</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-quilts' %}">Quilts</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-teabacks' %}">Tea Backs</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'rugstextiles' %}">Rugs</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'bedding' %}">Bedding</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'curtainrail' %}">Curtain Rails& Rods</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url  'curtainblinds' %}">Curtain Blinds</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'curtainpillows' %}">Curtain Pillows</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'doormats' %}">DoorMats</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'chairpads' %}">Chairs Pads</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'outdoor' %}">OutDoor & Mattress</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'plaids' %}">Plaids</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'quilts' %}">Quilts</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'teabacks' %}">Tea Backs</a></li>
                         </ul>
                           </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-beedroom' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'beedroom' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Beedroom</a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-beedroomset' %}">Beed Room Set</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-childrenbeedroom' %}">Children Beedroom</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-wardrobe' %}"">Wardrobe</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'beedroomset' %}">Beed Room Set</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'childrenbeedroom' %}">Children Beedroom</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'wardrobe' %}"">Wardrobe</a></li>
                         </ul>
                       </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-kitchen' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'kitchen' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Kitchen Furniture</a>
                         
                         <ul class="dropdown-menu">
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-kitchenaccessories' %}">Kitchen Accessories</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-kitchenfurniture' %}">Kitchen Furniture</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-kitchenteacup' %}">Tea & Coffee Cups</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-kitchentline' %}">Kitchen Lines</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-kitchenelectronics' %}">Kichen Electronics</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-kitchenplastics' %}">Plastic Kitchen Articles</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'kitchenaccessories' %}">Kitchen Accessories</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'kitchenfurniture' %}">Kitchen Furniture</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'kitchenteacup' %}">Tea & Coffee Cups</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'kitchentline' %}">Kitchen Lines</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'kitchenelectronics' %}">Kichen Electronics</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'kitchenplastics' %}">Plastic Kitchen Articles</a></li>
                         </ul>
                       </li>
                       <li class="nav-item submenu dropdown">
-                        <a href="{% url 'page-other' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'other' %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Other Item</a>
                         <ul class="dropdown-menu">
                           <li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-lighting' %}">Lighting</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-sport' %}">Sports</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-luandrycleaning' %}">Luandry & Cleaning</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-children' %}">Children</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'page-bathroom' %}">Bathroom</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'lighting' %}">Lighting</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'sport' %}">Sports</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'luandrycleaning' %}">Luandry & Cleaning</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'children' %}">Children</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'bathroom' %}">Bathroom</a></li>
                         </ul>
                                     </li>
-                        <li class="nav-item active"><a class="nav-link" href="{% url 'page-promotion' %}">Promotion</a></li> 
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'promotion' %}">Promotion</a></li> 
                     </ul>
                   </div> 
                 </div>
